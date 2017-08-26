@@ -23,6 +23,10 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   } else if (cart.length === 1) {
     console.log("In your cart, you have " + cart[0] + " at $" + cart[0] + ".");
+  } else if (cart.length ===2 ) {
+    console.log("In your cart, you have " + cart[0] + " at $" + cart[0] + " and " + cart [1] + " at $" + cart[1] + ".");
+  } else {
+    console.log("In your cart, you have " + cart[0] + " at $" + cart[0] + ", " + cart [1] + " at $" + cart[1] + ", and " + cart [2] + " at $" + cart[2] + ".");
   }
 }
 
