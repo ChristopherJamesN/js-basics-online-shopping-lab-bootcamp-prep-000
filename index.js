@@ -45,12 +45,12 @@ function removeFromCart(item) {
   var cartLength = cart.length;
   var tell = 0;
   for (var i = 0; i<cartLength; i++) {
-    if (Object.keys(cart[i])[0] === item) {
-      cart = cart.splice(i, 1);
+    if (Object.keys(cart[i]).hasOwnProperty(item)) {
+      delete Object.keys(cart[i]);
       tell += 1;
     }
   }
-  if (tell === 1) {
+  if (tell === 0) {
     console.log("That item is not in your cart.");
   }
   return cart;
