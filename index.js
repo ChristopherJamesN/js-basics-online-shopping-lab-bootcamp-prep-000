@@ -45,7 +45,7 @@ function removeFromCart(item) {
   var cartLength = cart.length;
   var tell = 0;
   for (var i = 0; i<cartLength; i++) {
-    if (Object.keys(cart[i]).hasOwnProperty(item)) {
+    if (Object.keys(cart[i]) === item) {
       delete Object.keys(cart[i]);
       tell += 1;
     }
