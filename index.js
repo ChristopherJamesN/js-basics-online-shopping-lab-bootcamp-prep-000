@@ -24,7 +24,7 @@ function viewCart() {
   } else if (cart.length === 1) {
     console.log("In your cart, you have " + Object.keys(cart[0])[0] + " at $" + cart[0][Object.keys(cart[0])[0]] + ".");
   } else if (cart.length ===2 ) {
-    console.log("In your cart, you have " + cart[0] + " at $" + cart[0] + " and " + cart [1] + " at $" + cart[1] + ".");
+    console.log("In your cart, you have " + Object.keys(cart[0])[0]  + " at $" + cart[0][Object.keys(cart[0])[0]]  + " and " + Object.keys(cart[1])[0]  + " at $" + cart[1][Object.keys(cart[1])[0]]  + ".");
   } else {
     console.log("In your cart, you have " + cart[0] + " at $" + cart[0] + ", " + cart [1] + " at $" + cart[1] + ", and " + cart [2] + " at $" + cart[2] + ".");
   }
