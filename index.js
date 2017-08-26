@@ -42,8 +42,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (item in cart) {
-    if (cart.hasOwnProperty(item)) {
+  for (var name in cart) {
+    if (cart.hasOwnProperty(name)) {
       delete cart.item;
     }
     else {
