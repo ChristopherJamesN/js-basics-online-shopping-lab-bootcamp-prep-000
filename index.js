@@ -50,7 +50,7 @@ function removeFromCart(item) {
       tell += 0;
     }
   }
-  if (tell == 1) {
+  if (tell === 1) {
     console.log("That item is not in your cart.");
   }
   return cart;
