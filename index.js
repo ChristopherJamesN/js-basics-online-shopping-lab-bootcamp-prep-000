@@ -45,7 +45,7 @@ function removeFromCart(item) {
   var cartLength = cart.length;
   for (var i = 0; i<cartLength; i++) {
     if (cart[i].hasOwnProperty(item)) {
-      cart = cart.splice(i, 1);
+      cart.splice(i, 1);
       return cart;
     }
   }
